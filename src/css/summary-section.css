@@ -1,0 +1,76 @@
+.container-summary{
+    /* border: 1px solid; */
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* card with summary */
+.summary {
+  width: 100%;
+  margin: auto;
+  padding: 34px 24px;
+  background-color: var(--Magnolia);
+  border-radius: 10px;
+  
+}
+
+.summary__plan {
+  font-weight: bold;
+  border-bottom: 1px solid var(--Light-gray);
+  padding-bottom: 12px;
+  align-items: center;
+
+}
+
+.summary__plan span {
+  font-weight: 500;
+  color: var(--Cool-gray);
+  text-decoration: underline;
+  cursor: pointer;
+  width: min-content;
+}
+.summary__plan span:hover{
+  filter: brightness(1.2);
+}
+
+.summary__plan__sub-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.summary__add-ons {
+  padding-top: 12px;
+  color: var(--Cool-gray);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary__add-ons .price {
+  color: var(--Marine-blue);
+  font-size: 0.95em;
+}
+
+/* End card with summary */
+
+.summary-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* All price */
+.all-per {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 0px;
+  color: var(--Cool-gray);
+  font-weight: bold;
+}
+
+.all-per .price {
+  color: var(--Purplish-blue);
+  font-size: 1.05em;
+}

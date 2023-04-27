@@ -1,0 +1,51 @@
+.accesories-container {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-ons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid var(--Cool-gray);
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.add-ons.selected {
+  border: 1px solid var(--Purplish-blue);
+  background-color: var(--Alabaster);
+}
+
+.container-label {
+  margin-left: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--Cool-gray);
+}
+
+.add-ons-name {
+  font-weight: bold;
+  color: var(--Marine-blue);
+}
+
+.cash-add {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--Purplish-blue);
+}
+
+input[type="checbox"]:checked .add-ons {
+  background-color: black;
+}
+
+.flex {
+  display: flex;
+}

@@ -1,0 +1,116 @@
+
+/* <-----------------Nav--------------------> */
+.bg-image-form {
+  background-image: url(../assets/images/bg-sidebar-mobile.svg);
+  width: 100%;
+  display: flex;
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@keyframes moveBg {
+  0%{
+    background-size: cover;
+  }100%{
+    background-size: 200%;
+  }
+}
+
+.nav-steps {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  /* border: 1px solid; */
+}
+
+/* Esta en el componente NavStep */
+.steps-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  margin-top: 3em;
+}
+
+/* En el componente step */
+.step-container {
+  display: flex;
+  gap: 10px;
+  color: var(--Light-blue);
+  font-size: 0.8em;
+  font-weight: 700;
+  /* border: 1px solid; */
+}
+
+.container-text-step{
+    display: none;
+}
+@media (min-width: 930px) {
+    .container-text-step{
+        display: block;
+    }
+    .step-container {
+        display: flex;
+        gap: 20px;
+        color: var(--Light-blue);
+        font-size: 0.8em;
+        font-weight: 700;
+        /* border: 1px solid; */
+      }
+      .nav-steps {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+      }
+}
+
+.step-pas {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+/*fin En el componente step */
+
+.step {
+  width: 30px;
+  height: 25px;
+  padding: 20px;
+
+  border-radius: 50%;
+  border: 1px solid var(--Light-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.step.step-active {
+  background-color: var(--Light-blue);
+  color: #000;
+}
+/* <-----------------Fin-Nav--------------------> */
+
+/* En desktop */
+@media (min-width: 930px) {
+  .bg-image-form {
+    background-image: url(../assets/images/bg-sidebar-desktop.svg);
+    /* width: 270px; */
+    min-height: 570px;
+    width: 30%;
+    display: flex;
+    border-radius: 20px;
+  }
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+  }
+}
